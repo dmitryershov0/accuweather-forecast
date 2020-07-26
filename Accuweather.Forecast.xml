@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Accuweather.Forecast</name>
+    </assembly>
+    <members>
+        <member name="T:Accuweather.Forecast.Forecast">
+            <summary>
+            Accuweather Forecast Api
+            </summary>
+        </member>
+        <member name="M:Accuweather.Forecast.Forecast.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="apiKey">Api key accuweather.</param>
+            <param name="language">Language.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Accuweather.Forecast.IForecast">
+            <summary>
+            Get forecast information for a specific location..
+            </summary>
+        </member>
+        <member name="M:Accuweather.Forecast.IForecast.FiveDaysOfDailyForecasts(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Returns an array of daily forecasts for the next 5 days for a specific location.
+            Forecast searches require a location key.
+            </summary>
+            <param name="locationKey">Unique ID to search for a specific location.</param>
+            <param name="details">Boolean value specifies whether or not to include full details in the response.</param>
+            <param name="metric">Boolean value specifies whether or not to display metric values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Accuweather.Forecast.IForecast.TwelveHoursOfHourlyForecasts(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Returns an array of hourly forecasts for the next 12 hours for a specific location.
+            Forecast searches require a location key. 
+            </summary>
+            <param name="locationKey">Unique ID to search for a specific location.</param>
+            <param name="details">Boolean value specifies whether or not to include full details in the response.</param>
+            <param name="metric">Boolean value specifies whether or not to display metric values.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
